@@ -29,9 +29,23 @@ Lista de proyectos:
    - Gestión de tareas
    - Nice to have: notificaciones de ciertos cambios por email
    - Nice to have: CD/CI
-5. [ ] Sistema de gestión de segurridad básico: Django, HTML, CSS, Javascript
+5. [ ] Sistema de gestión de seguridad básico: Django, HTML, CSS, Javascript
    - Creación de usuarios
    - Gestión de clave privada o secret
    - Desbloqueo de clave privada o secret
    - Sistema básico de desbloqueo de multifirma (2 de 3 usuarios)
    - Nice to have: avisos por email de acciones importantes
+
+---
+
+## Django Starters
+
+   **Andreas Jud:**
+ - Video: https://www.youtube.com/watch?v=SQ4A7Q6_md8&ab_channel=AndreasJud
+ - Assets: https://github.com/andyjud/django-starter-assets
+ - Starter: https://github.com/andyjud/django-starter
+
+   **Django:**
+ - Django recap: https://realpython.com/django-setup/ 
+ - Project app: https://realpython.com/get-started-with-django-1/
+   
