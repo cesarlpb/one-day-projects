@@ -21,3 +21,6 @@ Migraciones + Iniciar Django:
 
 Crear app `a_invoices`:
 `django-admin startapp a_invoices`
+
+Crear superuser:
+`python manag3.py createsuperuser`
