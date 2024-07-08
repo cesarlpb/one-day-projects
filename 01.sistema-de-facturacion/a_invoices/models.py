@@ -13,5 +13,19 @@ class Cliente(models.Model):
   NIF       = models.CharField(max_length=12)
   tipo      = models.CharField(max_length=10, choices=TIPO_OPCIONES, default='particular')
 
+  def __str__(self) -> str:
+      return f"{self.nombre}, {self.NIF}"
+
 class Factura(models.Model):
-  pass
+    importe = models.DecimalField(max_digits=10, decimal_places=2)
+    impuestos = models.IntegerField(default=21)  # %
+    cliente = models.ForeignKey(Cliente, on_delete=models.DO_NOTHING)
+    creado_en = models.DateTimeField(auto_now_add=True)
+    actualizado_en = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Factura #{self.id} - {self.cliente.nombre}"
+
+    class Meta:
+        verbose_name_plural = "Facturas"
+  
