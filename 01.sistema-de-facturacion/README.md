@@ -18,3 +18,6 @@ Migraciones + Iniciar Django:
 `python manage.py makemigrations`
 `python manage.py migrate`
 `python manage.py runserver`
+
+Crear app `a_invoices`:
+`django-admin startapp a_invoices`
