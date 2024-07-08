@@ -7,8 +7,8 @@ Lista de proyectos:
 1. [ ] Sistema simple de facturación con Django, HTML, CSS, Javascript
    - Registro de usuario
    - Gestión de datos de cliente
-   - Gestión de datos de facturas
-   - Generación de facturas en HTML y PDF
+   - Gestión de datos de facturas -> HTML
+   - Generación de facturas en HTML -> window.print() -> PDF
    - Nice to have: envío por email con Gmail
 2. [ ] Entrenamiento de modelo de machine learning para usar en lado cliente: HTML, CSS, Javascript
    - Modelo de perros y gatos
