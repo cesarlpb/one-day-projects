@@ -15,3 +15,16 @@ def index(request):
   }
 
   return render(request, "a_invoices/index.html", context=context)
+
+
+def detalle_cliente(request, id):
+  cliente = Cliente.objects.all().filter(pk=id).first()
+  
+  # debug
+  print("cliente solicitado:")
+  print(id, cliente)
+  
+  context = {
+    "cliente": cliente
+  }
+  return render(request, "a_invoices/clientes.html", context=context)
