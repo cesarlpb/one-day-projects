@@ -1,0 +1,6 @@
+{% comment %} Rellenar todos los campos de Facturas {% endcomment %}
+
+<h2>Factura: #{{ factura.id }}</h2>
+
+<p>Factura de: {{ factura.cliente.nombre }}</p>
+<p>Importe: {{ factura.importe }} €</p>
