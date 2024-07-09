@@ -24,3 +24,11 @@ Crear app `a_invoices`:
 
 Crear superuser:
 `python manag3.py createsuperuser`
+
+Shell:
+`python manage.py shell`
+  Importar modelos:
+  `from a_invoices.models import Cliente, Factura`
+  `Cliente.objects.all()`
+  `Factura.objects.all()`
+  
