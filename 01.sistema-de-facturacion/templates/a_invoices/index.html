@@ -1,3 +1,9 @@
+<style>
+  body {
+    background-color: beige;
+  }
+</style>
+
 <h2>Clientes</h2>
 
 {% comment %} Dato desde el backend: {% endcomment %}
@@ -6,15 +12,21 @@
 {% comment %} clientes de db {% endcomment %}
 {% comment "a lo bestia:" %} {{ clientes }} {% endcomment %}
 
+<ul>
 {% for cliente in clientes %}
-  <p>{{ cliente.nombre }}: {{ cliente.email }}</p>
+  <li>
+    <a href="#">{{ cliente.nombre }}: {{ cliente.email }}</a>
+  </li>
 {% endfor %}
+</ul>
 
 <h2>Facturas</h2>
 
 <ul>
   {% for factura in facturas %}
-    <li>Factura #{{ factura.id }} de {{ factura.cliente.nombre }}, {{ factura.cliente.apellido }}</li>
+    <li>
+      <a href="#">Factura #{{ factura.id }} de {{ factura.cliente.nombre }}, {{ factura.cliente.apellido }}</a>
+    </li>
   {% endfor %}
 </ul>
 {% comment %} facturas de db {% endcomment %}
