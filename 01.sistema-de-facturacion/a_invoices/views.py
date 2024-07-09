@@ -1,9 +1,12 @@
 from django.shortcuts import render
+from .models import Cliente, Factura
 
 def index(request):
   print("Han solicitado invoices/")
-  clientes = [1, 2, 3]
-  facturas = ['a', 'b', 'c']
+  # clientes = [1, 2, 3]
+  # facturas = ['a', 'b', 'c']
+  clientes = list(Cliente.objects.all())
+  facturas = list(Factura.objects.all())
 
   context = {
     "secret": "Supersafe123/",
