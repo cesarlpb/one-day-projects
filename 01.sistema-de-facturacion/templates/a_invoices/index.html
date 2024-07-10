@@ -11,15 +11,28 @@
   </head>
 
   <body>
-    <h2>Clientes</h2>
 
-    <ul>
-    {% for cliente in clientes %}
-      <li>
-        <a href="{% url 'cliente' id=cliente.id %}">{{ cliente.nombre }}: {{ cliente.email }}</a>
-      </li>
-    {% endfor %}
-    </ul>
+    <div class="container py-3">
+    <h2 class="text-center">Clientes</h2>
+
+    <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+
+      {% for cliente in clientes %}
+        <div class="list-group">
+          <a href="{% url 'cliente' id=cliente.id %}" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+            <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+            <div class="d-flex gap-2 w-100 justify-content-between">
+              <div>
+                <h6 class="mb-0">{{ cliente.nombre }}: {{ cliente.email }}</h6>
+                <p class="mb-0 opacity-75">{{ cliente.direccion }}</p>
+              </div>
+              <small class="opacity-50 text-nowrap">ahora</small>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+
+    </div>
 
     <h2>Facturas</h2>
 
@@ -30,7 +43,7 @@
         </li>
       {% endfor %}
     </ul>
-    {% comment %} facturas de db {% endcomment %}
-    {% comment "a lo bestia:" %} {{ facturas }} {% endcomment %}
+    </div>
+
   </body>
 </html>
