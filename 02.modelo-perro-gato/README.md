@@ -1,3 +1,13 @@
+## Ringa Tech
+
+- Vídeo: https://www.youtube.com/watch?v=DbwKbsCWPSg&ab_channel=RingaTech
+- Colab original: https://colab.research.google.com/drive/1DQc8a-WOTctenvoy5T0lWUXn47EuteCy?usp=sharing
+- Repo original: https://github.com/ringa-tech/clasificador-perros-gatos
+
+---
+
+- Mi colab: https://colab.research.google.com/drive/18umqKRDoEy3gbB2ZHi-w68s9Pd-lJjWE?usp=sharing
+
 ## Setup
 
 Clonamos y abrimos plantilla:
