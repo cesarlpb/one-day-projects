@@ -4,17 +4,17 @@ Repositorio con proyectos hechos en clase en un día para practicar full-stack
 
 Lista de proyectos:
 
-1. [ ] Sistema simple de facturación con Django, HTML, CSS, Javascript
+1. [X] Sistema simple de facturación con Django, HTML, CSS, Javascript
    - [X] Registro de usuario
    - [X] Gestión de datos de cliente -> modelos Cliente y Factura
    - [X] Gestión de datos de facturas -> HTML
-   - [ ] Generación de facturas en HTML -> window.print() -> PDF
+   - [X] Generación de facturas en HTML -> window.print() -> PDF // faltaría fomatear (WIP)
    - Nice to have: envío por email con Gmail
-2. [ ] Entrenamiento de modelo de machine learning para usar en lado cliente: HTML, CSS, Javascript
-   - Modelo de perros y gatos
-   - Reconocimiento con cámara de móvil
-   - Entrenamiento de Modelo
-   - Offline (una vez se tienen los archivos en navegador)
+2. [X] Entrenamiento de modelo de machine learning para usar en lado cliente: HTML, CSS, Javascript
+   - [X] Modelo de perros y gatos
+   - [X] Reconocimiento con cámara de móvil
+   - [X] Entrenamiento de Modelo
+   - [X] Offline (una vez se tienen los archivos en navegador)
 3. [ ] Sistema de gestión de contactos: Django, HTML, CSS, Javascript
    - Registro de contactos
    - Gestión de datos de contactos
