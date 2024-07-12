@@ -22,11 +22,17 @@ from a_users.views import profile_view
 from a_home.views import *
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('accounts/', include('allauth.urls')),
+    path('admin/', admin.site.urls), # admin panel
+    path('accounts/', include('allauth.urls')), # lib allauth
+    # urls para el view de home:
     path('', home_view, name="home"),
+    # importación urls de app a_users:
     path('profile/', include('a_users.urls')),
+    # importación urls de app a_home:
+    path('', include('a_home.urls')),
+    # view de perfil:
     path('@<username>/', profile_view, name="profile"),
+    # importación urls de app a_invoices:
     path('', include('a_invoices.urls')),
 ]
 
