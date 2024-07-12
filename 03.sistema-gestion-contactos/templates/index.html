@@ -49,6 +49,28 @@
       font-size: 1.25rem;
       margin: 0.5rem auto;
     }
+
+    .fullscreen-img {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw; 
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    .fullscreen-img img {
+        max-width: 90%;
+        max-height: 90%;
+        margin: 12.5% auto;
+        display: block; 
+    }
+    .fullscreen-img:target {
+        display: flex;
+    }
     </style>
 
   </head>
@@ -71,22 +93,46 @@
                             <img src="{% static 'avatar.png' %}" alt="{{ user.first_name }}-avatar" class="avatar-img">
                           </div>
                           <h3 class="card-title text-center text-slate">Redes sociales:</h3>
-
+                          <img src="{% static 'qr_code.png' %}" alt="{{ user.first_name }}-linkedin" class="p-3" id="thumbnail-img-{{ user.id }}">
                           <!-- Puedes agregar más datos de usuario aquí -->
                       </div>
                   </div>
                 </div>
               {% endfor %}
-              
               <!-- Add Pagination -->
           </div>
           <div class="swiper-pagination"></div>
         </div>
+
+        <div id="fullscreen-container" class="fullscreen-img">
+          <img id="fullscreen-img" src="{% static 'qr_code.png' %}" alt="{{ user.first_name }}-linkedin">
+        </div>
+
       </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('[id^="thumbnail-img-"]');
+        const fullscreenContainer = document.getElementById('fullscreen-container');
+        const fullscreenImg = document.getElementById('fullscreen-img');
+
+        images.forEach(img => {
+            img.onclick = function() {
+              console.log(this.src)
+                fullscreenImg.src = this.src;
+                fullscreenContainer.style.display = 'block';
+            };
+        });
+
+        fullscreenContainer.onclick = function() {
+            this.style.display = 'none';
+        };
+    });
+    </script>
 
   <script type="text/javascript">
   
