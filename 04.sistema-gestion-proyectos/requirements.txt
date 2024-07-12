@@ -4,3 +4,6 @@ django-cleanup
 django-allauth
 django-htmx
 qrcode[pil]
+django-extensions
+#pygraphviz
+pydotplus
