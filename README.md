@@ -15,11 +15,11 @@ Lista de proyectos:
    - [X] Reconocimiento con cámara de móvil
    - [X] Entrenamiento de Modelo
    - [X] Offline (una vez se tienen los archivos en navegador)
-3. [ ] Sistema de gestión de contactos: Django, HTML, CSS, Javascript
-   - Registro de contactos
-   - Gestión de datos de contactos
-   - vCards
-   - QR Codes
+3. [X] Sistema de gestión de contactos: Django, HTML, CSS, Javascript
+   - [X] Registro de contactos
+   - [X] Gestión de datos de contactos
+   - [X] vCards -> idea: https://codepal.ai/live-webpage-generator/query/PeNrcaLf/create-vcard-html-css-javascript
+   - [X] QR Codes
    - Nice to have: acortador de links
 4. [ ] Sistema de gestión de proyectos de desarrollo: Django, HTML, CSS, Javascript
    - Estudio inicial: diagrama de proyecto con Mermaid + eleccion de stack > elección de stack
