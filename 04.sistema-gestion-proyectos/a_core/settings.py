@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'a_home',
     'a_users',
     'a_invoices',
+    'django_extensions',
 ]
 
 SITE_ID = 1
