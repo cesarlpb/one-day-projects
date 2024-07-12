@@ -3,6 +3,20 @@
 - https://codepen.io/shamim539/pen/vdaqQG 
 - https://swiperjs.com/demos
 
+## QR Code
+
+```
+  pip install qrcode[pil]
+```
+
+Desde la carpeta del script:
+
+```
+  python crear_qr.py
+```
+
+**Nota:** Copiar `qr_code.png` generado a `static/`
+
 ## Setup
 
 Clonamos y abrimos plantilla:
@@ -44,4 +58,3 @@ Shell:
   `Cliente.objects.all()`
   
   `Factura.objects.all()`
-  
